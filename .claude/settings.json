@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(command:ls *)",
+      "Bash(command:mkdir *)",
+      "Skill"
+    ]
+  }
+}
