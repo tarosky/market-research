@@ -48,10 +48,12 @@ Claude Codeのスラッシュコマンドを使い、対話的にビジネス分
 | `/risk` | `output/10-risk.md` | リスク評価・シナリオプランニング |
 | `/expansion` | `output/11-expansion.md` | 市場参入・拡大戦略 |
 | `/synthesis` | `output/12-synthesis.md` | 統合戦略提言 |
+| `/run-batch` | 上記すべて | 全12分析を依存関係に基づき並列バッチ実行 |
+| `/slides` | `output/slides/` | 分析ファイルをMarpプレゼンテーションに変換 |
 
 ## 推奨ワークフロー
 
 1. `/init` でコンテキスト収集
-2. `/tam` → `/competitive` → `/persona` の順で基礎分析
-3. 結果を見ながら必要な分析を追加実行
-4. 最後に `/synthesis` で統合
+2. `/run-batch` で全分析を一括実行（または個別に実行）
+3. 結果を見ながら必要な分析を再実行
+4. `/slides` でプレゼンテーション資料を生成
